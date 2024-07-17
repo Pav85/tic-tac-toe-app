@@ -4,7 +4,7 @@ import "./static/style/main.css";
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <h1>Tic Tac Toe</h1>
       <Game />
     </div>
