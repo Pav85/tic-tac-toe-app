@@ -60,6 +60,10 @@ h1 {
   transform: scale(1.05);
 }
 
+.square:active {
+  transform: scale(0.95);
+}
+
 .board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
