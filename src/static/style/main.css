@@ -8,13 +8,14 @@ html,
 body {
   text-align: center;
   font: 30px Helvetica, sans-serif;
-  /* color: #333; */
   color: whitesmoke;
   background-color: #0093e9;
   background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
+
 h1 {
   font-size: 60px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .App {
@@ -31,14 +32,13 @@ h1 {
 
 .player-choice > h2 {
   margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .game {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /* height: 100vh; */
 }
 
 .square {
@@ -51,14 +51,20 @@ h1 {
   line-height: 100px;
   text-align: center;
   padding: 0;
-  margin: 1px;
+  margin: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.square:hover {
+  transform: scale(1.05);
 }
 
 .board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(3, 100px);
-  gap: 2px;
+  gap: 5px;
 }
 
 .game-board {
@@ -68,6 +74,7 @@ h1 {
 .status {
   margin-bottom: 35px;
   margin-top: 35px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .start-game {
@@ -80,10 +87,16 @@ h1 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s;
 }
 
 .start-game:hover {
   background-color: #0093e9;
   color: whitesmoke;
+  transform: scale(1.05);
+}
+
+.start-game:active {
+  transform: scale(0.95);
 }
