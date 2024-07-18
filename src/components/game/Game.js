@@ -1,10 +1,10 @@
 import React from "react";
 import Board from "../board/Board";
 
-const Game = () => {
+const Game = ({ player }) => {
   return (
     <div className="game">
-      <Board />
+      <Board player={player} />
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Square from "../square/Square";
 
-const Board = () => {
+const Board = ({ player }) => {
   const [squares, setSquares] = useState(Array(9).fill(null));
-  const [xIsNext, setXIsNext] = useState(true);
+  const [xIsNext, setXIsNext] = useState(player === "X");
 
   const handleClick = (index) => {
     const newSquares = squares.slice();
