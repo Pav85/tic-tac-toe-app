@@ -69,3 +69,21 @@ h1 {
   margin-bottom: 35px;
   margin-top: 35px;
 }
+
+.start-game {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0093e9;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.start-game:hover {
+  background-color: #0093e9;
+  color: whitesmoke;
+}

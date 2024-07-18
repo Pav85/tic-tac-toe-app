@@ -15,6 +15,11 @@ const Board = ({ player }) => {
     setXIsNext(!xIsNext);
   };
 
+  const handleNewGame = () => {
+    setSquares(Array(9).fill(null));
+    setXIsNext(player === "X");
+  };
+
   const renderSquare = (index) => {
     return (
       <Square
@@ -42,6 +47,9 @@ const Board = ({ player }) => {
       <div className="board">
         {squares.map((_, index) => renderSquare(index))}
       </div>
+      <button className="start-game" onClick={handleNewGame}>
+        Start New Game
+      </button>
     </div>
   );
 };
