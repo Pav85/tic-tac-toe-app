@@ -36,7 +36,7 @@ const Board = ({ player }) => {
   if (winner) {
     status = `Winner: ${winner}`;
   } else if (isDraw) {
-    status = "It's a draw!";
+    status = "It's a Tie!";
   } else {
     status = `Next player: ${xIsNext ? "X" : "O"}`;
   }
